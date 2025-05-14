@@ -95,9 +95,6 @@ runs:
           export/android/debug_keystore = "${{ github.action_path }}/debug.keystore"
           export/android/debug_keystore_user = "androiddebugkey"
           export/android/debug_keystore_pass = "android"
-          export/android/release_keystore= "${{ github.action_path }}/releasekey.keystore"
-          export/android/release_keystore_user= "primekey"
-          export/android/release_keystore_pass= "indig90"
       run: echo $SETTINGS >> ~/.config/godot/editor_settings-4.tres
 
     - name: Install Android build template
